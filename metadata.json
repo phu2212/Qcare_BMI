@@ -1,0 +1,7 @@
+{
+  "name": "Weight Loss Schedule Visualizer",
+  "description": "Upload a weight loss progress table image to automatically generate a BMI trend chart and extract data using Gemini AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
