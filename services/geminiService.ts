@@ -13,7 +13,7 @@ function encode(bytes: Uint8Array) {
 }
 
 export async function extractDataFromImage(base64Image: string, mimeType: string): Promise<ExtractionResult> {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: process.env.VITE_GEMINI_API_KEY });
   
   const response = await ai.models.generateContent({
     model: 'gemini-3-flash-preview',
